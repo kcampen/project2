@@ -23,17 +23,99 @@
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div id="page-wrap">
+    <div id="page-wrap">
+        <div class="header">
+            <div class="container">
+                <span class="home">home</span>
+                <div class="logo"></div>
+                    <div class="profile-chooser">
+                        <div class="avatar">
+                            <img src="http://www.lorempixel.com/150/150/people/8">
+                        </div>
+                        <span class="name">Current User</span>
+                    </div>    
+            </div>  <!-- end container -->
+         </div>  <!-- end header -->
+
+         <div class="main">
+            <div class="backbox">
+                <div class="container">
+                    <div class="sidebar">
+                        <div class="top">
+                            <h3>profile</h3>
+                         </div>    
+                            <div class="outerbox">
+                                <div class="profpic">
+
+                                </div>
+                                    <h2 class="profname">katy campen</h2>
+                                <h4 class="proflocation">black rock trail</h4>
+                            </div> <!-- end of outerbox -->
+                            <div class="posts">
+                                <div class="tweetnum">
+                                  <span class="discript">posts</span>
+                                  <span class="num">44</span>
+                                </div>
+                                <div class="following">
+                                  <span class="discript">following</span>
+                                  <span class="num">54</span>
+                                </div>
+                                <div class="locations">
+                                  <span class="discript">trails</span>
+                                  <span class="num">55</span>
+                                </div>
+                              </div>
+                              <div class="links">
+                                <div class="top">
+                                  <h3>places to go</h3>
+                                </div>
+                                <div class="outerbox two"></div>
+                            </div>
+                                              
+                        </div> <!-- end of sidebar -->
+                    <div class="stream">
+                        <div class="top three">
+                            <h3>compose</h3>
+                        </div>
+                        <div class="compose">
+                            <input class="expand" type="text" name=" input" placeholder="share">
+                            <div class="postimage"><img src="images/post.svg"></div>
+                            <div class="button">
+                            <a href="#myModal" role="button" class="btn" data-toggle ="modal"></a>
+                            </div>
+                        </div>
+                        <div class="top four">
+                            <h3>your stream</h3>
+                        </div>      
+                            <div class="tweets"></div> 
+
+
+                        </div>  <!-- end of compose -->
+                    </div> <!-- end of stream -->
+
+                </div> <!-- end of container -->    
+            </div>   <!-- end of backbox -->
+         </div> <!-- end of main -->
+    </div> <!-- end page-wrap -->
+
+
+    <div id="modal">
+            <div id="myModal" role="dialog" aria-hidden="true">
+                <div class="modal-header">
+                    <button type="button" class="close" data-toggle="modal">x</button>
+                </div>
+                <div class="modalbody">
+                    <input class="share" type="text" name="input" placeholder="share">
+                    <input class="sharelocation" type="text" name="input" placeholder="location">
+                    <button class="sharebutton" role="button" data-toggle="modal"></button>
+                </div>
+                <div class="modalfooter"></div>
+            </div>
+    </div>
 
 
 
 
-       
-
-       
-
-
-         </div> <!-- end page-wrap -->
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="bower_components/jquery/jquery.js"></script>
