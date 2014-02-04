@@ -46,28 +46,6 @@
                          </div>    
                             <div class="outerbox">
                                 <div class="profpic">
-
-                                </div>
-                                    <h2 class="profname">katy campen</h2>
-                                <h4 class="proflocation">black rock trail</h4>
-                            </div> <!-- end of outerbox -->
-                            <div class="posts">
-                                <div class="tweetnum">
-                                  <span class="discript">posts</span>
-                                  <span class="num">44</span>
-                                </div>
-                                <div class="following">
-                                  <span class="discript">following</span>
-                                  <span class="num">54</span>
-                                </div>
-                                <div class="locations">
-                                  <span class="discript">trails</span>
-                                  <span class="num">55</span>
-                                </div>
-                              </div>
-                              <div class="links">
-                                <div class="top">
-                                  <h3>places to go</h3>
                                 </div>
                                 <div class="outerbox two"></div>
                             </div>
@@ -78,12 +56,15 @@
                             <h3>compose</h3>
                         </div>
                         <div class="compose">
-                            <input class="expand" type="text" name=" input" placeholder="share">
-                            <div class="postimage"><img src="images/post.svg"></div>
-                            <div class="button">
-                            <a href="#myModal" role="button" class="btn" data-toggle ="modal"></a>
+                         <input class="expand" type="text" name=" input" placeholder="share">
+                            <div class="postimage"><img src="images/post.svg">
                             </div>
-                        </div>
+                                <div class="button">
+                                     <a href="#myModal" role="button" class="btn" data-toggle ="modal"></a>
+                                </div> 
+                        </div>    
+                            
+                            
                         <div class="top four">
                             <h3>your stream</h3>
                         </div>      
@@ -110,8 +91,10 @@
                 </div>
     </div>
 
+
+    
     <script class="tweet-template" type="text/template">
-        <div class="tweet" id= "<%= tweetID %>" userId= "<%= userID %>">
+        <div class="tweet" id= "<%= tweetID %>">
             <div class="avatar">
                 <img class="avatar-pic" src= "<%= avatar %>">
             </div>
@@ -122,8 +105,7 @@
             </div>
             <div class="message"><%= msg %></div>
             <div class="tweet-footer">
-                <img class="isFavorite" src="<%= isFavorite %>">
-                    <span>favorite</span>
+                <span>favorite: <%= isFavorite %></span>
             </div>
         </div>
     </script>  
