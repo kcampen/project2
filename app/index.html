@@ -98,7 +98,6 @@
          </div> <!-- end of main -->
     </div> <!-- end page-wrap -->
 
-
     <div id="modal">
             <div id="myModal" role="dialog" aria-hidden="true">
                 <div class="modal-header">
@@ -107,11 +106,28 @@
                 <div class="modalbody">
                     <input class="share" type="text" name="input" placeholder="share">
                     <input class="sharelocation" type="text" name="input" placeholder="location">
-                    <button class="sharebutton" role="button" data-toggle="modal"></button>
+                    <button class="sharebutton" role="button" data-toggle="modal">share</button>
                 </div>
-                <div class="modalfooter"></div>
-            </div>
     </div>
+
+    <script class="tweet-template" type="text/template">
+        <div class="tweet" id= "<%= tweetID %>" userId= "<%= userID %>">
+            <div class="avatar">
+                <img class="avatar-pic" src= "<%= avatar %>">
+            </div>
+            <div class="tweet-header">
+                <span class="name"><%= name %></span>
+                <span class="location"><%= location %></span>
+                <span class="time"><%= time %></span>
+            </div>
+            <div class="message"><%= msg %></div>
+            <div class="tweet-footer">
+                <img class="isFavorite" src="<%= isFavorite %>">
+                    <span>favorite</span>
+            </div>
+        </div>
+    </script>  
+
 
 
 

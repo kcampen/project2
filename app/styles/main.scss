@@ -1,3 +1,4 @@
+@import "compass";
 
 #page-wrap {
 
@@ -35,7 +36,7 @@ $textblack: #151515;
     background-color: $blue;
     position: fixed;
     border-bottom: 1px solid #B1B18A;
-    z-index: 0;
+    z-index: 1;
     top: 0;
 
     .home {
@@ -214,6 +215,7 @@ $textblack: #151515;
   font-size: 40px;
   margin-left: 100px;
   vertical-align: top;
+  z-index: 0;
 
 }
 
@@ -239,6 +241,70 @@ $textblack: #151515;
       }
 
 } //end of stream
+
+.tweet {
+    width: 682px;
+    height: 150px;
+    border-bottom: 1px solid $blue;
+    border-right: 4px solid $blue;
+    border-left: 4px solid $blue;
+
+    .avatar {
+        width: 100px;
+        height: 100px;
+        border-radius: 100;
+
+
+    }
+
+    .avatar-pic {
+        height: 100px;
+        width: 100px;
+
+    }
+
+    .tweet-header {
+        padding-top: 35px;
+    }
+
+    .name {
+        font-weight: bold;
+        font-size: 20px;
+        color: $textblack;
+    }
+
+    .location {
+        font-size: 15px;
+        font-weight: lighter;
+        color: $textblack;
+
+    }
+
+    .time {
+        font-size: 15px;
+        color: $textblack;
+
+    }
+
+    .message {
+        width: 419px;
+        height: 67px;
+        margin-top: 8px;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    .tweet-footer {
+        position: absolute;
+        right: 17px;
+        bottom: 11px;
+    }
+
+    .isFavorite {
+
+    }
+
+}
 
 
 
@@ -326,12 +392,7 @@ $textblack: #151515;
     border-radius: 7px;
     cursor: pointer;
   }
-.modalfooter {
-
-}
   
-
-
 } //end of modal
 
 
